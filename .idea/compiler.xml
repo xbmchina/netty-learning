@@ -7,11 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hellonetty" />
+        <module name="rpcserver" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="heartbeat" target="1.8" />
       <module name="hellonetty" target="1.8" />
       <module name="netty-learning" target="1.8" />
+      <module name="rpcserver" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
