@@ -1,13 +1,12 @@
 package cn.xbmchina.rpc.server;
 
-import io.netty.buffer.ByteBuf;
-import io.netty.buffer.Unpooled;
-import io.netty.channel.ChannelFutureListener;
+import cn.xbmchina.rpc.client.entity.Response;
+import cn.xbmchina.rpc.server.entity.ServerRequest;
+import com.alibaba.fastjson.JSONObject;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.handler.timeout.IdleState;
 import io.netty.handler.timeout.IdleStateEvent;
-import io.netty.util.CharsetUtil;
 
 public class SimpleServerHandler extends ChannelInboundHandlerAdapter {
 
@@ -17,8 +16,15 @@ public class SimpleServerHandler extends ChannelInboundHandlerAdapter {
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         System.out.println("client says: "+msg.toString());
         lossConnectCount = 0;
-        ctx.writeAndFlush("biubiu");
+
+        ServerRequest request = JSONObject.parseObject(msg.toString(), ServerRequest.class);
+        Response response = new Response();
+        response.setId(request.getId());
+        response.setResult("is Ok");
+        ctx.channel().writeAndFlush(JSONObject.toJSONString(response));
+
     }
+
 
 
     @Override
@@ -43,9 +49,9 @@ public class SimpleServerHandler extends ChannelInboundHandlerAdapter {
                 }
             }else if (event.state().equals(IdleState.WRITER_IDLE)) {
                 System.out.println("==写空闲==");
-                ctx.channel().writeAndFlush("pong");
+//                ctx.channel().writeAndFlush("pong");
             }else if (event.state().equals(IdleState.ALL_IDLE)) {
-                ctx.channel().writeAndFlush("pong");
+//                ctx.channel().writeAndFlush("pong");
             }
 
 

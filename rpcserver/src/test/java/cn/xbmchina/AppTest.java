@@ -1,20 +1,24 @@
 package cn.xbmchina;
 
-import static org.junit.Assert.assertTrue;
 
+import cn.xbmchina.rpc.client.TcpClient;
+import cn.xbmchina.rpc.client.entity.ClientRequest;
+import cn.xbmchina.rpc.client.entity.Response;
+import cn.xbmchina.rpc.server.entity.ServerRequest;
 import org.junit.Test;
 
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-{
-    /**
-     * Rigorous Test :-)
-     */
+public class AppTest {
+
+
     @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
+    public void  testClient() {
+        ClientRequest request = new ClientRequest();
+        request.setContent("哈哈哈哈哈哈哈哈哈哈或");
+        Response resp = TcpClient.send(request);
+
+        System.out.println(resp.getResult());
     }
 }

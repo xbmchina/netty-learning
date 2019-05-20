@@ -10,26 +10,21 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import io.netty.handler.codec.DelimiterBasedFrameDecoder;
-import io.netty.handler.codec.Delimiters;
 import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.codec.string.StringEncoder;
 import io.netty.handler.timeout.IdleStateHandler;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.zookeeper.CreateMode;
-import org.springframework.context.ApplicationListener;
-import org.springframework.context.event.ContextRefreshedEvent;
-import org.springframework.stereotype.Component;
 
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.util.concurrent.TimeUnit;
 
-@Component
-public class RPCServer implements ApplicationListener<ContextRefreshedEvent> {
+public class RPCServer_test {
 
 
-    public void start() throws Exception {
+    public static void main(String[] args) throws Exception {
+
 
         ServerBootstrap bootstrap = new ServerBootstrap();
         EventLoopGroup parentGroup = new NioEventLoopGroup();
@@ -69,15 +64,5 @@ public class RPCServer implements ApplicationListener<ContextRefreshedEvent> {
             childGroup.shutdownGracefully().sync();
         }
 
-    }
-
-    @Override
-    public void onApplicationEvent(ContextRefreshedEvent contextRefreshedEvent) {
-        try {
-            this.start();
-        } catch (Exception e) {
-            e.printStackTrace();
-            System.out.println("服务端启动异常！！");
-        }
     }
 }

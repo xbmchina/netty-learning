@@ -1,39 +1,48 @@
 package cn.xbmchina.rpc.client;
 
+import cn.xbmchina.rpc.client.entity.ClientRequest;
+import com.alibaba.fastjson.JSONObject;
 import io.netty.channel.ChannelHandlerContext;
-import io.netty.channel.ChannelInboundHandlerAdapter;
-import io.netty.handler.timeout.IdleState;
-import io.netty.handler.timeout.IdleStateEvent;
+import io.netty.channel.SimpleChannelInboundHandler;
 
-import java.util.Date;
 
-public class SimpleClientHandler extends ChannelInboundHandlerAdapter {
+public class SimpleClientHandler extends SimpleChannelInboundHandler<Object> {
 
-    private int curTime = 0;
-    private int beatTime = 3;
 
+
+    /**
+     * 在到服务器的连接已经建立之后将被调用
+     * @param ctx
+     * @throws Exception
+     */
     @Override
-    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        System.out.println("===SimpleClientHandler==channelRead===");
-        System.out.println(msg.toString());
+    public void channelActive(ChannelHandlerContext ctx) throws Exception {
+//        ClientRequest request = new ClientRequest();
+//        request.setContent("客户端连上了！！！");
+//        ctx.channel().writeAndFlush(JSONObject.toJSONString(request));
     }
 
-
-
+    /**
+     * 当从服务器接收到一个消息时被调用
+     * @param channelHandlerContext
+     * @param byteBuf
+     * @throws Exception
+     */
     @Override
-    public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
-        System.out.println("客户端循环心跳监测发送: "+new Date());
-
-        if (evt instanceof IdleStateEvent){
-            IdleStateEvent event = (IdleStateEvent)evt;
-            if (event.state()== IdleState.WRITER_IDLE){
-                if (curTime<beatTime) {
-                    curTime++;
-                    ctx.writeAndFlush("ping");
-                }
-            }
-        }
+    protected void channelRead0(ChannelHandlerContext channelHandlerContext, Object byteBuf) throws Exception {
+        System.out.println("客户端读取到数据了！！！");
+        System.out.println(byteBuf.toString());
     }
 
-
+    /**
+     * 在处理过程中引发异常时被调用
+     * @param ctx
+     * @param cause
+     * @throws Exception
+     */
+    @Override
+    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
+        cause.printStackTrace();
+        ctx.close();
+    }
 }
