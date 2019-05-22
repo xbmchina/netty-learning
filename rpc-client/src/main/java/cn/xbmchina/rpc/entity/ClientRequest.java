@@ -1,4 +1,4 @@
-package cn.xbmchina.rpc.client.entity;
+package cn.xbmchina.rpc.entity;
 
 import java.util.concurrent.atomic.AtomicLong;
 

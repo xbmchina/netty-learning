@@ -1,7 +1,7 @@
-package cn.xbmchina.rpc.client;
+package cn.xbmchina.rpc.common;
 
-import cn.xbmchina.rpc.client.entity.ClientRequest;
-import cn.xbmchina.rpc.common.Response;
+
+import cn.xbmchina.rpc.entity.ClientRequest;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.locks.Condition;

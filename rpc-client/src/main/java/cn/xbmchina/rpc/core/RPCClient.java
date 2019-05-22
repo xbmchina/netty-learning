@@ -1,8 +1,10 @@
-package cn.xbmchina.rpc.client;
+package cn.xbmchina.rpc.core;
 
-import cn.xbmchina.rpc.client.entity.ClientRequest;
-import cn.xbmchina.rpc.common.Response;
 import cn.xbmchina.rpc.common.Const;
+import cn.xbmchina.rpc.common.DefaultFuture;
+import cn.xbmchina.rpc.common.Response;
+import cn.xbmchina.rpc.entity.ClientRequest;
+import cn.xbmchina.rpc.handler.SimpleClientHandler;
 import com.alibaba.fastjson.JSONObject;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
@@ -18,7 +20,7 @@ import io.netty.handler.timeout.IdleStateHandler;
 import java.net.InetSocketAddress;
 import java.util.concurrent.TimeUnit;
 
-public class TcpClient {
+public class RPCClient {
 
     static final Bootstrap bootstrap = new Bootstrap();
     static ChannelFuture f;

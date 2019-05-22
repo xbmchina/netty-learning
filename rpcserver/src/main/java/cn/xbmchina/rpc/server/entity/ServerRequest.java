@@ -1,15 +1,25 @@
 package cn.xbmchina.rpc.server.entity;
 
+
 public class ServerRequest {
-    private Long id;
+    private long id;
+    private String command;
     private Object content;
 
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
+    }
+
+    public String getCommand() {
+        return command;
+    }
+
+    public void setCommand(String command) {
+        this.command = command;
     }
 
     public Object getContent() {

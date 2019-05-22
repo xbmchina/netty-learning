@@ -1,6 +1,7 @@
 package cn.xbmchina.rpc.server;
 
-import cn.xbmchina.rpc.client.entity.Response;
+import cn.xbmchina.rpc.common.Response;
+import cn.xbmchina.rpc.entity.DataUtils;
 import cn.xbmchina.rpc.server.entity.ServerRequest;
 import com.alibaba.fastjson.JSONObject;
 import io.netty.channel.ChannelHandlerContext;
@@ -18,10 +19,9 @@ public class SimpleServerHandler extends ChannelInboundHandlerAdapter {
         lossConnectCount = 0;
 
         ServerRequest request = JSONObject.parseObject(msg.toString(), ServerRequest.class);
-        Response response = new Response();
-        response.setId(request.getId());
-        response.setResult("is Ok");
-        ctx.channel().writeAndFlush(JSONObject.toJSONString(response));
+        DataUtils dataUtils = DataUtils.newInstance();
+        Response result = dataUtils.process(request);
+        ctx.channel().writeAndFlush(JSONObject.toJSONString(result));
 
     }
 

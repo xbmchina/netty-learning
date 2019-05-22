@@ -1,5 +1,6 @@
-package cn.xbmchina.rpc.client;
+package cn.xbmchina.rpc.handler;
 
+import cn.xbmchina.rpc.common.DefaultFuture;
 import cn.xbmchina.rpc.common.Response;
 import com.alibaba.fastjson.JSONObject;
 import io.netty.channel.ChannelHandlerContext;

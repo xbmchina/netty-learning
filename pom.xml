@@ -11,6 +11,7 @@
     <module>hellonetty</module>
       <module>rpcserver</module>
     <module>heartbeat</module>
+      <module>rpc-client</module>
   </modules>
   <packaging>pom</packaging>
 
