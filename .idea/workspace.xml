@@ -1,52 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5e0d3b2d-0c89-49c5-abfd-e25371613f1f" name="Default" comment="RPC实现">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_7_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpc-client/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpc-client/rpc-client.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpc-client/src/main/java/cn/xbmchina/rpc/annotation/Remote.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpc-client/src/main/java/cn/xbmchina/rpc/annotation/RemoteInvoke.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpc-client/src/main/java/cn/xbmchina/rpc/common/Const.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpc-client/src/main/java/cn/xbmchina/rpc/common/DefaultFuture.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpc-client/src/main/java/cn/xbmchina/rpc/common/Response.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpc-client/src/main/java/cn/xbmchina/rpc/common/ResponseUtils.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpc-client/src/main/java/cn/xbmchina/rpc/core/RPCClient.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpc-client/src/main/java/cn/xbmchina/rpc/entity/ClientRequest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpc-client/src/main/java/cn/xbmchina/rpc/entity/Phone.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpc-client/src/main/java/cn/xbmchina/rpc/handler/SimpleClientHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpc-client/src/main/java/cn/xbmchina/rpc/proxy/InvokeProxy.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpc-client/src/main/java/cn/xbmchina/rpc/service/PhoneRemote.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpc-client/src/main/java/cn/xbmchina/rpc/service/PhoneService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpc-client/src/test/java/cn/xbmchina/AppTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpc-client/src/test/java/cn/xbmchina/PhoneControllerTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpcserver/src/main/java/cn/xbmchina/rpc/annotation/Remote.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpcserver/src/main/java/cn/xbmchina/rpc/common/DataMedium.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpcserver/src/main/java/cn/xbmchina/rpc/common/Response.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpcserver/src/main/java/cn/xbmchina/rpc/common/ResponseUtils.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpcserver/src/main/java/cn/xbmchina/rpc/entity/BeanMethod.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpcserver/src/main/java/cn/xbmchina/rpc/entity/DataUtils.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpcserver/src/main/java/cn/xbmchina/rpc/entity/Phone.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpcserver/src/main/java/cn/xbmchina/rpc/service/PhoneRemote.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpcserver/src/main/java/cn/xbmchina/rpc/service/PhoneRemoteImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpcserver/src/main/java/cn/xbmchina/rpc/service/PhoneService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/rpcserver/src/test/java/cn/xbmchina/rpc/web/PhoneControllerTest.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    <list default="true" id="5e0d3b2d-0c89-49c5-abfd-e25371613f1f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/rpcserver/pom.xml" afterPath="$PROJECT_DIR$/rpcserver/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/rpcserver/rpcserver.iml" afterPath="$PROJECT_DIR$/rpcserver/rpcserver.iml" />
-      <change beforePath="$PROJECT_DIR$/rpcserver/src/main/java/cn/xbmchina/rpc/client/DefaultFuture.java" afterPath="$PROJECT_DIR$/rpcserver/src/main/java/cn/xbmchina/rpc/client/DefaultFuture.java" />
-      <change beforePath="$PROJECT_DIR$/rpcserver/src/main/java/cn/xbmchina/rpc/client/SimpleClientHandler.java" afterPath="$PROJECT_DIR$/rpcserver/src/main/java/cn/xbmchina/rpc/client/SimpleClientHandler.java" />
-      <change beforePath="$PROJECT_DIR$/rpcserver/src/main/java/cn/xbmchina/rpc/client/TcpClient.java" afterPath="$PROJECT_DIR$/rpcserver/src/main/java/cn/xbmchina/rpc/client/TcpClient.java" />
-      <change beforePath="$PROJECT_DIR$/rpcserver/src/main/java/cn/xbmchina/rpc/client/entity/ClientRequest.java" afterPath="$PROJECT_DIR$/rpcserver/src/main/java/cn/xbmchina/rpc/client/entity/ClientRequest.java" />
-      <change beforePath="$PROJECT_DIR$/rpcserver/src/main/java/cn/xbmchina/rpc/client/entity/Response.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/rpcserver/src/main/java/cn/xbmchina/rpc/server/SimpleServerHandler.java" afterPath="$PROJECT_DIR$/rpcserver/src/main/java/cn/xbmchina/rpc/server/SimpleServerHandler.java" />
-      <change beforePath="$PROJECT_DIR$/rpcserver/src/main/java/cn/xbmchina/rpc/server/entity/ServerRequest.java" afterPath="$PROJECT_DIR$/rpcserver/src/main/java/cn/xbmchina/rpc/server/entity/ServerRequest.java" />
-      <change beforePath="$PROJECT_DIR$/rpcserver/src/test/java/cn/xbmchina/AppTest.java" afterPath="$PROJECT_DIR$/rpcserver/src/test/java/cn/xbmchina/AppTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -81,8 +37,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rpc-client/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            <state relative-caret-position="222">
+              <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -811,7 +767,7 @@
       <workItem from="1558223244263" duration="16196000" />
       <workItem from="1558352150551" duration="6967000" />
       <workItem from="1558441925411" duration="9490000" />
-      <workItem from="1558478975017" duration="5064000" />
+      <workItem from="1558478975017" duration="5146000" />
     </task>
     <task id="LOCAL-00001" summary="hello netty">
       <created>1557674295298</created>
@@ -834,7 +790,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558363248730</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="RPC实现">
+      <created>1558484511931</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558484511932</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -870,7 +833,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63324000" />
+    <option name="totallyTimeSpent" value="63406000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -895,7 +858,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46546054" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32730263" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1460,8 +1423,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rpc-client/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        <state relative-caret-position="222">
+          <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
           <folding />
         </state>
       </provider>
