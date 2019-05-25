@@ -13,6 +13,7 @@
       <set>
         <option value="$PROJECT_DIR$/heartbeat/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/rpc-core/pom.xml" />
       </set>
     </option>
   </component>

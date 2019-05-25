@@ -9,8 +9,10 @@
         <module name="heartbeat" />
         <module name="hellonetty" />
         <module name="rpc-client" />
-        <module name="rpc-core" />
+        <module name="rpc-server" />
         <module name="rpc-service-api" />
+        <module name="rpc-service-core" />
+        <module name="rpc-user-service" />
         <module name="rpcserver" />
       </profile>
     </annotationProcessing>
@@ -20,7 +22,10 @@
       <module name="netty-learning" target="1.8" />
       <module name="rpc-client" target="1.8" />
       <module name="rpc-core" target="1.7" />
+      <module name="rpc-server" target="1.7" />
       <module name="rpc-service-api" target="1.8" />
+      <module name="rpc-service-core" target="1.7" />
+      <module name="rpc-user-service" target="1.8" />
       <module name="rpcserver" target="1.7" />
     </bytecodeTargetLevel>
   </component>

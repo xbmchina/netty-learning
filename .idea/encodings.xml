@@ -6,8 +6,10 @@
     <file url="file://$PROJECT_DIR$/hellonetty" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rpc-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rpc-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rpc-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rpc-service-api" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rpcserver" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rpc-service-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rpc-user-service" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
