@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/hellonetty/hellonetty.iml" filepath="$PROJECT_DIR$/hellonetty/hellonetty.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-learning.iml" filepath="$PROJECT_DIR$/netty-learning.iml" />
       <module fileurl="file://$PROJECT_DIR$/rpc-client/rpc-client.iml" filepath="$PROJECT_DIR$/rpc-client/rpc-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rpc-core/rpc-core.iml" filepath="$PROJECT_DIR$/rpc-core/rpc-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rpc-service-api/rpc-service-api.iml" filepath="$PROJECT_DIR$/rpc-service-api/rpc-service-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/rpcserver/rpcserver.iml" filepath="$PROJECT_DIR$/rpcserver/rpcserver.iml" />
     </modules>
   </component>

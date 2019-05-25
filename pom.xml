@@ -12,6 +12,8 @@
       <module>rpcserver</module>
     <module>heartbeat</module>
       <module>rpc-client</module>
+      <module>rpc-service-api</module>
+    <module>rpc-core</module>
   </modules>
   <packaging>pom</packaging>
 
