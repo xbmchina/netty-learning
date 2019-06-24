@@ -58,6 +58,7 @@ public class EchoServer {
                         }
                     });
 
+
             ChannelFuture f = b.bind().sync();
 
             f.channel().closeFuture().sync();

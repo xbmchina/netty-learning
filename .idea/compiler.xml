@@ -17,6 +17,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="bilibu-server" target="1.8" />
       <module name="heartbeat" target="1.8" />
       <module name="hellonetty" target="1.8" />
       <module name="netty-learning" target="1.8" />
