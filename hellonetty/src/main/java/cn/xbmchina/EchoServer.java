@@ -58,7 +58,6 @@ public class EchoServer {
                         }
                     });
 
-
             ChannelFuture f = b.bind().sync();
 
             f.channel().closeFuture().sync();
@@ -68,7 +67,5 @@ public class EchoServer {
             bossGroup.shutdownGracefully().sync();
             childGroup.shutdownGracefully().sync();
         }
-
-
     }
 }

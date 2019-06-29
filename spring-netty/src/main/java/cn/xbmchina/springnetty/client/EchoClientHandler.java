@@ -1,4 +1,4 @@
-package cn.xbmchina;
+package cn.xbmchina.springnetty.client;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -6,9 +6,6 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.util.CharsetUtil;
 
-/**
- * 客户端处理类
- */
 /**
  * 客户端处理类
  */
@@ -26,6 +23,7 @@ public class EchoClientHandler extends SimpleChannelInboundHandler<ByteBuf> {
 
     /**
      * 当从服务器接收到一个消息时被调用
+     *
      * @param channelHandlerContext
      * @param byteBuf
      * @throws Exception

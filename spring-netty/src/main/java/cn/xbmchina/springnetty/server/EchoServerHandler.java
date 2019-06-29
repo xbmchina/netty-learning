@@ -1,4 +1,4 @@
-package cn.xbmchina;
+package cn.xbmchina.springnetty.server;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -7,9 +7,6 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.util.CharsetUtil;
 
-/***
- * 服务端自定义业务处理handler
- */
 /***
  * 服务端自定义业务处理handler
  */
@@ -53,3 +50,4 @@ public class EchoServerHandler extends ChannelInboundHandlerAdapter {
         ctx.close();
     }
 }
+

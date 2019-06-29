@@ -15,6 +15,7 @@
       <module>rpc-service-api</module>
       <module>rpc-service-core</module>
       <module>rpc-user-service</module>
+      <module>netty-design-protocol</module>
   </modules>
   <packaging>pom</packaging>
 

@@ -4,12 +4,14 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/heartbeat/heartbeat.iml" filepath="$PROJECT_DIR$/heartbeat/heartbeat.iml" />
       <module fileurl="file://$PROJECT_DIR$/hellonetty/hellonetty.iml" filepath="$PROJECT_DIR$/hellonetty/hellonetty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty-design-protocol/netty-design-protocol.iml" filepath="$PROJECT_DIR$/netty-design-protocol/netty-design-protocol.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-learning.iml" filepath="$PROJECT_DIR$/netty-learning.iml" />
       <module fileurl="file://$PROJECT_DIR$/rpc-client/rpc-client.iml" filepath="$PROJECT_DIR$/rpc-client/rpc-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/rpc-server/rpc-server.iml" filepath="$PROJECT_DIR$/rpc-server/rpc-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/rpc-service-api/rpc-service-api.iml" filepath="$PROJECT_DIR$/rpc-service-api/rpc-service-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/rpc-service-core/rpc-service-core.iml" filepath="$PROJECT_DIR$/rpc-service-core/rpc-service-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/rpc-user-service/rpc-user-service.iml" filepath="$PROJECT_DIR$/rpc-user-service/rpc-user-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-netty/spring-netty.iml" filepath="$PROJECT_DIR$/spring-netty/spring-netty.iml" />
     </modules>
   </component>
 </project>
